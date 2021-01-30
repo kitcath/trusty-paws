@@ -34,14 +34,14 @@ export default function LandingPage() {
             <div class="d-flex justify-content-center">
                      <h3 class="font-weight-bold"> Trusty Paws</h3>      
                 
-              
             </div> 
+
             <p class="text-center">From finding local friends, to  your  
                     routinely morning walks , . Trusty Paws has  thought of it </p>
             <p class="text-center">and made it better. Join the community , make a new friend, connect with local 
                     & qualified vetenerians and shelters and individuals who sell quality essientials and treats.</p>
             <div className="paragraph">
-                 <h5></h5>
+                 <h5>hi</h5>
             </div> 
         </div>
         </>

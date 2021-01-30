@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component} from 'react';
+import LandingPage from './components/welcome/LandingPage';
+import {BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-     <h1> hello world</h1>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return(
+      <Router>
+        <LandingPage/>
+      </Router>
+
+    )
+  }
 }
 
 export default App;

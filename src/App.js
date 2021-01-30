@@ -6,6 +6,8 @@ import SignOut from './components/auth/SignOut';
 import PasswordRecovery from './components/auth/PasswordRecovery';
 import Dashboard from './components/dashboard/Dashboard';
 import PageNotFound from './components/pages/PageNotFound';
+import Home from './components/welcome/Home';
+import Vet from './components/vets/Vet';
 
 class App extends Component {
   render(){
@@ -14,8 +16,10 @@ class App extends Component {
         <Switch>
           <Route path="/sign-in" component={SignIn}/>
           <Route path="/sign-up" component={SignOut}/>
-          <Route path="/password-recovery" component={PasswordRecovery}/>
+          <Route path="/recover-password" component={PasswordRecovery}/>
           <Route path="/page-not-found" component={PageNotFound}/>
+          <Route path="/home" component={Home}/>
+          <Route path="/vet" component={Vet}/>
         </Switch>
       </Router>
 

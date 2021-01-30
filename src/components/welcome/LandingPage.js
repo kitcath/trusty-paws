@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/LandingPage.css';
 import Header from './Header';
+import Choices from './Choices';
 import cat from '../../images/catLanding.png'
 import MainNav from '../navigation/MainNav';
 
@@ -9,8 +10,13 @@ export default function LandingPage() {
         <>
         <div className="landing-container">
             <Header/>
-            <MainNav/>
+            {/*<MainNav/>*/}
+        </div>  
 
+        <div className="choices-container">
+            <Choices/>
+        </div>
+            {/*}
             <div class="post-container">
                 <div className="post-thumb"><img src={cat} alt="cat" class="float-right"/></div>
                 <div class="post-content">
@@ -18,10 +24,11 @@ export default function LandingPage() {
                     <button className="adopt-btn"> Adopt Now!</button>
                 </div>
             </div>
-        </div>  
+            */}
 
-        <div className="divider"></div>
-        <div className="spacing"> helo</div>
+
+        {/*<div className="divider"></div>*/}
+        <div className="spacing"> helloo</div>
        
        <div className="utilities">
             <div class="d-flex justify-content-center">

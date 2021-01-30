@@ -64,6 +64,7 @@ function Hamburger() {
                  {HamburgerSignedOut.map((item, index) => {
                     return <SubMenu item={item} key={index}/>
                  })}
+                 <button> Sign Out</button>
             </SidebarWrap>
         </SidebarNav>
         </>

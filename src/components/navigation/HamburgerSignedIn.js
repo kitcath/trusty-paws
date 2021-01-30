@@ -3,6 +3,9 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import {RiArrowDownSLine, RiArrowDropUpLine} from 'react-icons/ri';
+import {RiClapperboardLine} from 'react-icons/ri';
+import {CgBrowse} from 'react-icons/cg';
+import {BiHealth, BiCart} from 'react-icons/bi'
 
 export const HamburgerSignedOut = [
     {
@@ -16,7 +19,7 @@ export const HamburgerSignedOut = [
                 icon: <IoIcons.IoIosPaper/>,
             },
             {
-                title:"Settings",
+                title:"Edit Profile",
                 icon: <IoIcons.IoIosPaper/>,
             },
         ]
@@ -24,7 +27,7 @@ export const HamburgerSignedOut = [
     }, 
    {
         title:"My Applications",
-        icon: <AiIcons.AiFillHome/>,
+        icon: <RiClapperboardLine/>,
         iconClosed:<RiArrowDownSLine />,
         iconOpened:<RiArrowDropUpLine />,
         subNav:[
@@ -42,7 +45,7 @@ export const HamburgerSignedOut = [
     {
         title:"Browse",
         path:"/pets",
-        icon: <AiIcons.AiFillHome/>,
+        icon: <CgBrowse/>,
         iconClosed:<RiArrowDownSLine />,
         iconOpened:<RiArrowDropUpLine />,
         subNav:[
@@ -60,14 +63,14 @@ export const HamburgerSignedOut = [
     {
         title:"Find Vets",
         path:"/pets",
-        icon: <AiIcons.AiFillHome/>,
+        icon: <BiHealth/>,
         iconClosed:<RiArrowDownSLine />,
         iconOpened:<RiArrowDropUpLine />,
 
     },
     {
         title:"My Cart",
-        icon: <AiIcons.AiFillHome/>,
+        icon: <BiCart/>,
        iconClosed:<RiArrowDownSLine />,
         iconOpened:<RiArrowDropUpLine />,
         subNav:[
@@ -84,7 +87,4 @@ export const HamburgerSignedOut = [
         ]
 
     },
-    {
-       title: <button> Sign out</button>,
-    }
 ]

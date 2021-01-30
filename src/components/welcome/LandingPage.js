@@ -9,7 +9,7 @@ export default function LandingPage() {
     return (
         <>
         <div className="landing-container">
-            <Header/>
+            <LandingPage/>
             {/*<MainNav/>*/}
         </div>  
 

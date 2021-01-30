@@ -16,8 +16,8 @@ class MainNav extends Component {
                       <li class="list-inline-item "><NavLink to='/'>Food</NavLink></li>
                       <li class="list-inline-item"><NavLink to='/'>Supplies</NavLink></li>
                       <li class="list-inline-item "><NavLink to='/'>Vetenerian</NavLink></li>
-                     <li class="list-inline-item"><NavLink to='/'>Shelters</NavLink></li>
-             </ul> 
+                      <li class="list-inline-item"><NavLink to='/'>Shelters</NavLink></li> 
+             </ul>  
           </div> 
         </div>  
         </>

@@ -65,7 +65,7 @@ function Landing() {
                     <img src={title} alt="title"/>
                     <button onClick={() => history.push('/login')}>Sign In</button>
                     <span>
-                        <p><Link to="sign-up"> Create Account </Link> </p>
+                        <p><Link to="signup"> Create Account </Link> </p>
                     </span>
                 </Container>
              </Section>

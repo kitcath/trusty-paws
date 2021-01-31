@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import dogwalker from '../../images/SignIn.png';
 import '../../css/SignIn.css';
+import fire from '../../firebase';
 
 class SignIn extends Component {
 
@@ -18,7 +19,6 @@ class SignIn extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state)
     }
 
     render(){

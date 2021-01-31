@@ -39,17 +39,16 @@ class PasswordRecovery extends Component {
                             </div>
 
                             <div className="input-field">
-                              <label htmlFor="password">Password</label>
+                              <label htmlFor="password"> New Password</label>
                               <input type="password" id="password" onChange={this.handleChange}/> 
-                            Forgot <NavLink to="recover-password">Password?</NavLink>
                             </div>
 
                             <div className="input-field">
-                                 <button className="btn pink lighten-1 z-depth-0">Login</button>
+                                 <button className="btn pink lighten-1 z-depth-0"><NavLink to="/"> Submit</NavLink></button>
                            </div>
 
                            <div className="input-field">
-                           Don't have an account? <NavLink to="/sign-up"> Create Account</NavLink>
+                           Don't have an account? <NavLink to="/signup"> Create Account</NavLink>
                            </div>
                         </form>
                     </div>

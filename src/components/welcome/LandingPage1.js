@@ -31,7 +31,7 @@ const Container = styled.div
     }
 
     p {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom:1rem;
         transform: translate(150px, -60px);
         font-family: 'Montserrat', sans-serif;
@@ -65,7 +65,7 @@ function Landing() {
                     <img src={title} alt="title"/>
                     <button onClick={() => history.push('/login')}>Sign In</button>
                     <span>
-                        <p><Link to="signup"> Create Account </Link> </p>
+                        <p><Link to="sign-up"> Create Account </Link> </p>
                     </span>
                 </Container>
              </Section>

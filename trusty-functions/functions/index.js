@@ -123,7 +123,7 @@ app.post('/signup', (req, res) => {
 
     // TODO: validate data
     let token;
-    db.doc(`/users/${newUser.email}`).get()
+    db.doc(`/users/${newUser.firstName}`).get()
         .then(doc => {
             return firebase
                 .auth()
@@ -133,17 +133,16 @@ app.post('/signup', (req, res) => {
             userId = data.user.uid;
             return data.user.getIdToken();
         })
-        .then(idToken => {
+        .then( (idToken) => {
             token = idToken;
             const userCredentials = {
-                firstName: newUser.firstName,
-                lastName: newUser.lastName,
                 email: newUser.email,
+                lastName: newUser.lastName,
                 createdAt: new Date().toISOString(),
                 type: newUser.type,
                 userId: userId
             };
-            return db.doc(`/users/${newUser.userId}`).set(userCredentials);
+            return db.doc(`/users/${newUser.firstName}`).set(userCredentials);
         })
         .then( () => {
             return res.status(201).json({ token });

@@ -17,7 +17,7 @@ const Dashboard = () => {
                    </div>
 
                    <div class="col s2">
-                       <img src={picture} alt="picture" wodth="200px" hieght="400px"/>
+                      <Search/>
                    </div>
 
                    <div class="col s10">

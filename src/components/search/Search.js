@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {PetList} from '../pets/PetList';
 
 
 const Search = () => {
@@ -38,14 +39,10 @@ const Search = () => {
       onChange={(event) => setQuery(event.target.value)}
        />
   </div>
-    {/*     <input 
-         type="Text"
-         placeholder="Search for a movie by title"
-         className="search-box"
-         value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        />
-    */}  
+  
+  <div className="pet-container">
+        <PetList pets = {products} />
+  </div>
           
         </>
     )

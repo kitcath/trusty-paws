@@ -8,7 +8,6 @@ class SearchData extends Component {
      return (
          <>
           <img src={goodDog} alt="good dog" width="200px" height="150px" justify-content="center"/>
-         <Search/>
          <Filter/>
             
          </>

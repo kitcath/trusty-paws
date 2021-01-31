@@ -67,7 +67,7 @@ class SignOut extends Component {
                             </div>
 
                             <div className="input-field">
-                              <label htmlFor="password">Password</label>
+                              <label htmlFor="password">Confirm Password</label>
                               <input type="password" id="password" onChange={this.handleChange}/> 
                             </div>
 
@@ -76,7 +76,7 @@ class SignOut extends Component {
                            </div>
 
                            <div className="input-field">
-                           Already have an account? <NavLink to="/sign-in"> Sign In</NavLink>
+                           Already have an account? <NavLink to="/login"> Sign In</NavLink>
                            </div>
                         </form>
                     </div>

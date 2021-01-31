@@ -9,3 +9,15 @@
     max-width:300px;
     color:black;
 }
+
+.pet-container{
+    flex-direction: row;
+    flex-wrap:nowrap;
+    height: 100vh;
+    overflow:auto;
+    justify-content: center;
+    margin-top:10px;
+    background-color: transparent;
+    border:none;
+
+}

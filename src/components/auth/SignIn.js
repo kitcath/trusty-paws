@@ -50,7 +50,7 @@ class SignIn extends Component {
                            </div>
 
                            <div className="input-field">
-                           Don't have an account? <NavLink to="/sign-up"> Create Account</NavLink>
+                           Don't have an account? <NavLink to="/signup"> Create Account</NavLink>
                            </div>
                         </form>
                     </div>

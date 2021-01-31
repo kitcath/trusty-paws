@@ -3,7 +3,7 @@ import Dashboard from '../dashboard/Dashboard';
 import MainNav from '../navigation/MainNav';
 
 
-const Home = () => {
+function Home ()  {
     return (
         <div>
             <Dashboard/>

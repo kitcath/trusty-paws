@@ -1,0 +1,30 @@
+.image-container{
+    border:none;
+    justify-content: center;
+    max-width:300px;
+}
+
+.title{
+    justify-content:center;
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
+.btn-adoption{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    height: 30px;
+    font-size:15px;
+    margin-top:10px;
+    background: rgb(250,99,99);
+    background: linear-gradient(90deg, rgba(250,99,99,1) 0%, rgba(238,165,62,1) 100%);
+    border: none;
+}
+
+.btn-add{
+    background-color: transparent;
+    border:none;
+    float:right;
+    margin-top:10px;
+}

@@ -16,6 +16,7 @@ export const HamburgerSignedOut = [
         subNav:[
             {
                 title:"Favourite Pets ",
+
                 icon: <IoIcons.IoIosPaper/>,
             },
             {

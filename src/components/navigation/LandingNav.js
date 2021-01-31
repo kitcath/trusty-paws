@@ -1,19 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import logo from '../../images/logo1.png';
+import profile  from '../../images/profile-icon.png';
+import {Link } from 'react-router-dom'
+
 
 class LandingNav extends Component {
     render(){
 
         return(
-            <nav>
-            <div class="nav-wrapper">
-                 <a href="/home" class="brand-logo"><img src={logo} alt="logo" height="60px"/></a>
+            <>
+            <nav class=" #ffcdd2 red lighten-4">
+            <div class="nav-wrapper ">
+                 <a href="/home" class="brand-logo"></a>
                      <ul id="nav-mobile" class="right hide-on-med-and-down">
-                       <li><a href="/home"><img src={pet} alt="pet" height="60px"/></a></li>
-                        <li><a href="/vet"><img src={vet} alt="vet" height="60px"/></a></li>
-                        <li><a href="collapsible.html"><img src={treat} alt="treat" height="60x"/></a></li>
+                       <li><Link to="/sign-in"><img src={profile} alt="profile-icon" height="40px" /></Link></li>
                       </ul>
                    </div>
         </nav>
+        </>
         )
     }
    

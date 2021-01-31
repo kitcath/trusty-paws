@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import dogwalker from '../../images/SignIn.png';
 import '../../css/SignIn.css';
 
@@ -46,7 +46,7 @@ class SignIn extends Component {
                             </div>
 
                             <div className="input-field">
-                                 <button className="btn pink lighten-1 z-depth-0">Login</button>
+                                 <button className="btn pink lighten-1 z-depth-0 text-decoration-none"><NavLink to="/home">Login</NavLink></button>
                            </div>
 
                            <div className="input-field">

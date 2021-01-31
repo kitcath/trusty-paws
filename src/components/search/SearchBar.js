@@ -3,15 +3,14 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
-import {HamburgerSignedIn, HamburgerSignedOut} from './HamburgerSignedIn';
-import SubMenu from './HamburgerSubMenu';
-import logo from '../../images/logo.png';
+import SearchData from './SearchData';
 
 const Nav = styled.div
 `
-    height:80px;
-    background:#FEEADE;
-    display: flex;
+    height:100vh;
+    width:50px;
+    transform: translateX(442px);
+    background: transparent
     justify-content: flex-start;
     align-items: center;
     color:#938383;
@@ -19,11 +18,12 @@ const Nav = styled.div
 
 const NavIcon = styled(Link)
 `
-    margin-left:2rem;
+
     font-size:2rem;
-    height: 80ox;
+    margin-top:0px;
+    height: 80px;
     display:flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center; 
 
 `
@@ -36,8 +36,9 @@ const SidebarNav = styled.nav
     float:right;
     position:fixed;
     justify-content: center;
-    top:0px;
-    left:2px;
+    top: 0px;
+    right:2px;
+    right: ${({sidebar}) => (sidebar ? '0' : '-100%')};
     transition:250ms; 
 `
 
@@ -46,7 +47,7 @@ const SidebarWrap = styled.div
 float:right;
 width:100%
 `
-function Hamburger() {
+function SearchBar() {
 
     const [sidebar, setSidebar] = useState(false);
 
@@ -54,21 +55,22 @@ function Hamburger() {
   
     return (
         <>
-        <SidebarNav>
-            <span>
-                 <img src={logo} alt="logo" height="50px"/>
-            <h4> Trusty Paws</h4>
-            </span>
-           
+        <Nav> 
+            <NavIcon to='#'>
+                <FaIcons.FaSearch onClick={showSidebar} />
+            </NavIcon>
+        </Nav>
+        <SidebarNav sidebar={!sidebar}>
             <SidebarWrap>
-                 {HamburgerSignedOut.map((item, index) => {
-                    return <SubMenu item={item} key={index}/>
-                 })}
+                {/*add profile picture upload*/}
+                 <NavIcon to='#'>
+                      <AiIcons.AiOutlineClose onClick={showSidebar}/>
+                 </NavIcon>
+                    <SearchData/>
             </SidebarWrap>
-
         </SidebarNav>
         </>
     )
 }
 
-export default Hamburger;
+export default SearchBar;

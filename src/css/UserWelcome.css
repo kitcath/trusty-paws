@@ -1,0 +1,10 @@
+.header{
+    overflow-x:hidden;
+    margin-top:10px;
+}
+
+
+.updates{
+    height:50vh;
+    background-color:orange;
+}

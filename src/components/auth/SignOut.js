@@ -72,7 +72,7 @@ class SignOut extends Component {
                             </div>
 
                             <div className="input-field">
-                                 <button className="btn pink lighten-1 z-depth-0">Create Account</button>
+                                 <button className="btn pink lighten-1 z-depth-0"><a href="/home"> Create Account</a></button>
                            </div>
 
                            <div className="input-field">

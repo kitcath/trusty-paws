@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Trusty Paws
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inspiration
+We believe that every pet deserves to find a home.  Animal shelters have often had to euthanize animals due to capacity issues and lack of adoptions. Our objective with Trusty Paws is to increase the rate of adoptions of these animals by increasing the exposure of shelters to potential pet owners as well as to provide an accessible platform for users to browse and adopt their next best friend.
+Trusty Paws also aims to be an online hub for all things related to your pet, from offering an online marketplace for pet products to finding a vet near you.
 
-## Available Scripts
+## What it does
+Our vision for Trusty Paws is to create a platform that brings together all the players that contribute to the health and happiness of our pawed friends, while allowing users to support local businesses. Each user,  shelter,  seller, and veterinarian contributes to a different aspect of Trusty Paws.
 
-In the project directory, you can run:
+**Users**:
+Users are your everyday users who own pets or are looking to adopt pets. They will be able to access the marketplace to buy items for their pets, browse through each shelter's pet profiles to fill out adoption requests, and find the nearest pet clinic.
 
-### `yarn start`
+**Shelters**:
+Shelters accounts will be able to create pet profiles for each of their animals that are up for adoption! Each pet will have its own profile that can be customized with pictures and other fields providing further information on them. The shelter receives an adoption request form each time an user applies to adopt one of their pets.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Sellers**:
+Sellers will be able to set up stores showing all of their product listings, which include, but are not limited to, food, toys, accessories, and many other. Our marketplace will provide the opportunity for local businesses that have been affected by Covid-19 to reach their target audience while abiding by health and safety guidelines. For users, it will be a convenient way to satisfy all the needs of their pet in one place. Finally, our search bar will allow users to search for specific items for a quick and efficient shopping experience.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Veterinarians**:
+Veterinarians will be able to set up a profile for their clinic, with all the pertinent information such as their opening hours, services provided, and location.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How we built it
+For the front-end, React., Bootstrap and Materialized CSS were used to acquire the visual effects of the current website. In fact, the very first step we undertook was to draft an initial prototype of the product on Figma to ensure all the requirements and required features were met. After a few iterations of redesigning, we each dove into developing the necessary  individual components, forms, and pages for the website. Once all components were completed, the next step was to route pages together in order to achieve a seamless navigation of the website.
 
-### `yarn build`
+We used Firebase within Node.Js to implement a framwork for the back-end. Using Firebase, we implemented a NoSQL database using Cloud Firestore. Data for users (all types), pets, products, and adoption forms along with their respective fields were stored as documents in their respective collections.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Finally, we used Google's Distance Matrix API to compute distances between two addresses and find the nearest services when necessary, such as the closest vet clinics or the closest shelters.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges we ran into
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Although we were successful at accomplishing the major features of the website, we encountered many challenges throughout the weekend. As we started working on Trusty Paws, we realized that the initial implementation was not as user-friendly as we wanted it to be. We then decided to take a step back and to return to the initial design phase. Another challenge we ran into was that most of the team was unfamiliar with the development tools necessary for this project, such as Firebase, Node.Js, bootstrap, and redux.
 
-### `yarn eject`
+## Accomplishments that we're proud of
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+We are proud that our team learned so much over the course of a few days.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for Trusty Paws
+We want to keep improving our users' experience by optimizing the current features. We also want to improve the design and user friendliness of the interface.
